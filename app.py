@@ -62,7 +62,7 @@ if menu == "📈 Prix & Volume":
 
     # Chandelier + Volume PRO
     fig = make_subplots(rows=2, cols=1, row_heights=[0.7, 0.3], 
-                       subplot_titles=("🕯️ Chandelier SOLEUR", "📊 Volume"), 
+                       subplot_titles=("🕯️ Prix Solana", "📊 Volume"), 
                        vertical_spacing=0.05)
     
     fig.add_trace(go.Candlestick(x=df_filtered["date"], open=df_filtered["ouv"],
@@ -105,3 +105,4 @@ elif menu == "🔍 Données":
 
 st.markdown("---")
 st.markdown("*Dashboard SOLEUR Pro v3.0 - Powered by Streamlit & Plotly*")
+
